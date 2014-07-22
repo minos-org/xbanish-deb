@@ -1,0 +1,16 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xbanish
+Upstream-Contact: https://github.com/jcs/xbanish
+Source: https://github.com/jcs/xbanish/archive/master.zip
+
+Files: *
+Copyright: Copyright (c) 2013 joshua stein <jcs@jcs.org>
+License: GPL-3
+
+Files: debian/*
+Copyright: Copyright (c) 2014, Javier P.L. <chilicuil@ubuntu.com>
+License: GPL-3
+
+License: GPL-3
+ On Debian systems, the text of the GPL3 License can be found in
+ '/usr/share/common-licenses/GPL-3'.

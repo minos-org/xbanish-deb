@@ -1,0 +1,24 @@
+Source: xbanish
+Section: x11
+Priority: optional
+Maintainer: Javier P.L. <chilicuil@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.5), x11proto-core-dev, libx11-dev, libxt-dev, libxfixes-dev, libxi-dev
+Standards-Version: 3.9.4
+Homepage: https://github.com/jcs/xbanish
+Vcs-Git: git://github.com/jcs/xbanish
+Vcs-Browser: https://github.com/jcs/xbanish.git
+
+Package: xbanish
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Banish the mouse cursor when typing, show it again when the mouse moves.
+ xbanish hides the mouse cursor when you start typing, and shows it again when
+ the mouse cursor moves or a mouse button is pressed.  This is similar to
+ xterm's pointerMode setting, but xbanish works globally in the X11 session.
+ .
+ unclutter's -keystroke mode is supposed to do this, but it's broken[0].  I
+ looked into fixing it, but the unclutter source code is terrible, so I wrote
+ xbanish in a few hours.
+ .
+ The name comes from ratpoison's "banish" command that sends the cursor to the
+ corner of the screen.
