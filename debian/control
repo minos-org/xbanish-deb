@@ -1,7 +1,7 @@
 Source: xbanish
 Section: x11
 Priority: optional
-Maintainer: Javier P.L. <chilicuil@ubuntu.com>
+Maintainer: Javier López <m@javier.io>
 Build-Depends: debhelper (>= 7.0.5), x11proto-core-dev, libx11-dev, libxt-dev, libxfixes-dev, libxi-dev
 Standards-Version: 3.9.4
 Homepage: https://github.com/jcs/xbanish
