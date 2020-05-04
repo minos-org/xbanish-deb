@@ -1,14 +1,16 @@
---- a/Makefile
-+++ b/Makefile
-@@ -5,9 +5,9 @@ VERS	:= 1.2
- CC	?= cc
- CFLAGS	?= -O2 -Wall -Wunused -Wmissing-prototypes -Wstrict-prototypes
+Index: xbanish/Makefile
+===================================================================
+--- xbanish.orig/Makefile
++++ xbanish/Makefile
+@@ -4,9 +4,9 @@ CC	?= cc
+ CFLAGS	?= -O2
+ CFLAGS	+= -Wall -Wunused -Wmissing-prototypes -Wstrict-prototypes -Wunused
  
 -PREFIX	?= /usr/local
 +PREFIX	?= /usr
- BINDIR	?= $(DESTDIR)$(PREFIX)/bin
--MANDIR	?= $(DESTDIR)$(PREFIX)/man/man1
-+MANDIR	?= $(DESTDIR)$(PREFIX)/share/man/man1
+ BINDIR	?= $(PREFIX)/bin
+-MANDIR	?= $(PREFIX)/man/man1
++MANDIR	?= $(PREFIX)/share/man/man1
  
  INSTALL_PROGRAM ?= install -s
  INSTALL_DATA ?= install
